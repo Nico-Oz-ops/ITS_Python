@@ -5,7 +5,7 @@ print(x,y)
 print(x * y)
 
 x_1:float = (x * y) - x
-print(x_1)
+print(x_1) 
 
-# print() 
+# print()
 

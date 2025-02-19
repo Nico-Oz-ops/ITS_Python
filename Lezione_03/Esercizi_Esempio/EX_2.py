@@ -17,3 +17,6 @@ match n:
         print(f"Uf, per un pelo! Sei arrivato {n}rd!")
     case _:
         print(f"Peccato, non ce l'hai fatta! Se arrivato {n}th :/")
+
+# In this example, the match statement is used to match the value of the variable n.
+# The match statement is followed by a series of case statements, each of which specifies a possible value of n.

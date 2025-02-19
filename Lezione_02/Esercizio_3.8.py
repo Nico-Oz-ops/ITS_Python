@@ -7,7 +7,7 @@ print(visit_location_in_order)
 ordinato_desc = sorted(visit_location_in_order, reverse = True)
 print(ordinato_desc)
 
-print(visit_location)
+# print(visit_location)
 visit_location_copy = visit_location[:]
 visit_location_copy.reverse()
 print(visit_location_copy)

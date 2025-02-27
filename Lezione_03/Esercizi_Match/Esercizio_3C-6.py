@@ -38,24 +38,24 @@ info_animale = {
     "habitat": habitat,
 }
 
-match (animal_type, habitat):
-    case ("unknown", _):
-        print(f"L'animale {animale} non è riconosciuto")
-    case (_, habitat) if habitat not in ["acqua", "terra", "aria"]:
-        print(f"{habitat} non è corretto")
-    case (tipo, habitat) if habitat in habitat_corretto.get(tipo, []):
-        print(f"L'habitat dell'animale {animale} è: {habitat}")
-    case (tipo, habitat):
-        if habitat in habitat_corretto[tipo]:
-            print(f"L'animale {animale} può vivere in più habitat, persino {habitat}")
-        else:
-            print(f"L'animale {animale} di solito non vive un habitat come {habitat}")
+# match (animal_type, habitat):
+#     case ("unknown", _):
+#         print(f"L'animale {animale} non è riconosciuto")
+#     case (_, habitat) if habitat not in ["acqua", "terra", "aria"]:
+#         print(f"{habitat} non è corretto")
+#     case (tipo, habitat) if habitat in habitat_corretto.get(tipo, []):
+#         print(f"L'habitat dell'animale {animale} è: {habitat}")
+#     case (tipo, habitat):
+#         if habitat in habitat_corretto[tipo]:
+#             print(f"L'animale {animale} può vivere in più habitat, persino {habitat}")
+#         else:
+#             print(f"L'animale {animale} di solito non vive un habitat come {habitat}")
 
 
         
-# match info_animale:
-#     case {"nome": animale, "habitat": habitat}:
-#         print(f"L'animale {animale} solitamente vive in {habitat}")
-#     case _:
-#         print("Errore")
+match info_animale:
+    case {"nome": animale, "habitat": habitat}:
+        print(f"L'animale {animale} solitamente vive in {habitat}")
+    case _:
+        print("Errore")
     

@@ -19,7 +19,6 @@ my_dict_3 = {
     "city": "Tokyo"
 }
 
-
 list_people = [my_dict, my_dict_2, my_dict_3]
 # print(list_people)
 

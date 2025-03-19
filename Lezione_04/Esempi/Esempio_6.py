@@ -1,11 +1,12 @@
 # 6 - Definire una funzione che ritorni un dizionario
 
-def get_user(myname, myrole) -> dict[str, str]:
-    return{"name": myname, "role": myrole}
+def get_user(myname, myrole, myage) -> dict[str, str, int]:
+    return{"name": myname, "role": myrole, "age": myage}
 
-user = get_user("Nico", "el papi")
+user = get_user("Nico", "admin", 36)
 
-print(f"User: {user['name']}")
-print(f"Role: {user['role']}")
+print(f"Utente: {user['name']}")
+print(f"Ruolo: {user['role']}")
+print(f"Età: {user['age']} anni")
 
 

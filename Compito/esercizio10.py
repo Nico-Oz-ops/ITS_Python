@@ -20,3 +20,15 @@ media_dispari = somma_dispari / count_dispari if count_dispari > 0 else 0 #calco
 
 print(f"La somma dei numeri pari è: {somma_pari}")
 print(f"La media dei numeri dispari è: {media_dispari:.2f}")
+
+# "----------------------------------------------------------"
+
+# dizionario_frequenze = {}
+
+# while True:
+#     numero_inserito = int(input("Inserisci il numero: "))
+
+#     if numero_inserito in dizionario_frequenze:
+#         dizionario_frequenze[numero_inserito] += 1
+#     else:
+#         dizionario_frequenze[numero_inserito] = 1

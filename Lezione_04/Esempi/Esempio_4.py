@@ -9,7 +9,11 @@ def operations(a, b) -> tuple[int, int]:
 
 # Assigns values to two variables
 sum_value, diff_value = operations(15, 25)
-print(f"Somma: {sum_value}")
-print(f"Sottrazzione: {diff_value}")
+# print(f"Somma: {sum_value}")
+# print(f"Sottrazzione: {diff_value}")
+
+sum_value_2, diff_value_2 = operations(int(input("Insertar un numero intero: ")), int(input("Insertar un numero intero: ")))
+print(f"Somma: {sum_value_2}")
+print(f"Sottrazzione: {diff_value_2}")
 
 

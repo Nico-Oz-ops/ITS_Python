@@ -11,13 +11,13 @@ match punto:
     case (0, y):
         print(f"Il punto si trova sull'asse Y: {y}")
     case punto if x > 0 and y > 0:
-            print("Il punto si trova nel primo quadrante")
+        print("Il punto si trova nel primo quadrante")
     case punto if x < 0 and y > 0:
-            print("Il punto si trova nel secondo quadrante")       
+        print("Il punto si trova nel secondo quadrante")       
     case punto if x < 0 and y < 0:
-            print("Il punto si trova nel terzo quadrante")   
+        print("Il punto si trova nel terzo quadrante")   
     case punto if x > 0 and y < 0:
-            print("Il punto si trova nel quarto quadrante") 
+        print("Il punto si trova nel quarto quadrante") 
 
 
 

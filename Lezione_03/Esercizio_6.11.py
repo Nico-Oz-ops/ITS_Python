@@ -1,24 +1,24 @@
 cities = {
     "Parigi": {
-        "Country": "Francia",
-        "Population": "3 milioni",
-        "Fact": "Conosciuta come la Città della Luce"
+        "country": "Francia",
+        "population": "3 milioni",
+        "fact": "Conosciuta come la Città della Luce"
     },
     "Roma": {
-        "Country": "Italia",
-        "Population": "4 milioni",
-        "Fact": "Tutte le strade portano a Roma, Caput Mundi"
+        "country": "Italia",
+        "population": "4 milioni",
+        "fact": "Tutte le strade portano a Roma, Caput Mundi"
     },
     "Amsterdam": {
-        "Country": "Paesi Bassi",
-        "Population": "1 milione",
-        "Fact": "Qui si fuma tranquillamente"
+        "country": "Paesi Bassi",
+        "population": "1 milione",
+        "fact": "Qui si fuma tranquillamente"
     }
 }
 
 for city, info in cities.items():
     print(f"Citta: {city}")
-    print(f"Paese: {info['Country']}")
-    print(f"Popolazione: {info['Population']}")
-    print(f"Curiosità: {info['Fact']}")
+    print(f"Paese: {info['country']}")
+    print(f"Popolazione: {info['population']}")
+    print(f"Curiosità: {info['fact']}")
     print("-" * 50)

@@ -8,13 +8,6 @@ pesci = ["squalo", "trota", "salmone", "carpa"]
 
 animal_type = "unknown"
 
-habitat_corretto = {
-    "mammifero": ["acqua", "terra"], #ci sono mammiferi che possono vivere in acqua e sulla terra
-    "rettile": ["acqua", "terra"], #ci sono rettili che possono vivere in acqua e sulla terra
-    "uccello": ["acqua", "terra", "aria"], #ci sono uccelli che possono vivere in acqua, sulla terra e in aria
-    "pesce": ["acqua"] #i pesci solo vivono nell'acqua  
-}
-
 match animale:
     case animale if animale in mammiferi:
         animal_type = "mammifero"
@@ -38,24 +31,13 @@ info_animale = {
     "habitat": habitat,
 }
 
-# match (animal_type, habitat):
-#     case ("unknown", _):
-#         print(f"L'animale {animale} non è riconosciuto")
-#     case (_, habitat) if habitat not in ["acqua", "terra", "aria"]:
-#         print(f"{habitat} non è corretto")
-#     case (tipo, habitat) if habitat in habitat_corretto.get(tipo, []):
-#         print(f"L'habitat dell'animale {animale} è: {habitat}")
-#     case (tipo, habitat):
-#         if habitat in habitat_corretto[tipo]:
-#             print(f"L'animale {animale} può vivere in più habitat, persino {habitat}")
-#         else:
-#             print(f"L'animale {animale} di solito non vive un habitat come {habitat}")
-
-
-        
 match info_animale:
-    case {"nome": animale, "habitat": habitat}:
-        print(f"L'animale {animale} solitamente vive in {habitat}")
-    case _:
-        print("Errore")
-    
+    case info_animale if habitat in ["terra", "acqua"]:
+        match animale:
+            case animale if animale in ["cane", "gatto", "cavallo", "elefante", "leone"] and habitat == "terra":
+                print(f"L'animale {animale} è uno dei mamiferi che può vivere sulla terra")
+            case animale if animale in ["balena", "delfino"] and habitat == "acqua":
+                print(f"L'animale {animale} è uno dei mamiferi che può vivere sull'acqua")
+            case _: 
+                print(f"Non ho mai visto l'animale {animale} vivere nell'habitat {habitat}")
+                

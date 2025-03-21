@@ -5,7 +5,7 @@ saluto.greet("Nicolino")
 
 # le posso dare un nickname al nome della funzione, in questo caso da "saluto" a "s"
 import saluto as s 
-s.greet("Lisa la Buhaiolinas")
+s.greet("Buhaiolinas")
 
 # B - se voglio importare solo la funzione greet dal modulo saluto ed ignorare il resto del modulo saluto, farò:
 from saluto import greet

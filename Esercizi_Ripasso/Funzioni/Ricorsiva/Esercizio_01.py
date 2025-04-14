@@ -2,24 +2,24 @@
 '''Calcolare il fattoriale'''
 
 # Opzione ciclo while
-# while True:
-#     n = input("Inserire un numero intero positivo: ")
-#     if n.isdigit() and int(n) >= 0:
-#         n = int(n)
-#         break
-#     else:
-#         print("Errore. Inserire un numero intero e positivo")
+while True:
+    n = input("Inserire un numero intero positivo: ")
+    if n.isdigit() and int(n) >= 0:
+        n = int(n)
+        break
+    else:
+        print("Errore. Inserire un numero intero e positivo")
 
-# if n == 0:
-#     print("Il fattoriale di 0 è 1")
+if n == 0:
+    print("Il fattoriale di 0 è 1")
 
-# else:
-#     i = 1
-#     fattoriale = 1
-#     while i <= n:
-#         fattoriale *= i
-#         i += 1
-#     print(f"Il fattoriale di {n} è: {fattoriale}")
+else:
+    i = 1
+    fattoriale = 1
+    while i <= n:
+        fattoriale *= i
+        i += 1
+    print(f"Il fattoriale di {n} è: {fattoriale}")
 
 
 # Opzione funzione ricorsiva

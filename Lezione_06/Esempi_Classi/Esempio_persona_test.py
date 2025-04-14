@@ -5,9 +5,10 @@ from Esempio_persona import Persona
 nv:Persona = Persona("Nicolas", "Valenzuela", 36)
 
 print(nv)
+print("-" * 50)
 
 print(nv.name, nv.lastname, nv.age, sep=", ")
-
+print("-" * 50)
         
 # dal file Esempio_persona_2.py importa la classe Persona
 from Esempio_persona_2 import Persona
@@ -39,3 +40,4 @@ print("-" * 50)
 
 # ritorna i valori della Classe
 print(nv.getName(), nv.getLastname(), nv.getAge())
+

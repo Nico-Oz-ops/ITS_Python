@@ -20,4 +20,6 @@ class Persona:
         self.name = name
         self.lastname = lastname
         self.age = age
-        
+
+    def __str__(self) -> str:
+        return f"Nome: {self.name}\nCognome: {self.lastname}\nEtà: {self.age}"

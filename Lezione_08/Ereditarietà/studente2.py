@@ -1,4 +1,4 @@
-from persona import Persona # la classe studente è una specializzazione della classe Persona
+from ESERCIZI_DATA.Lezione_08.Ereditarietà.persona import Persona # la classe studente è una specializzazione della classe Persona
 
 class Studente(Persona):
 

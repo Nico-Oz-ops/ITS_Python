@@ -103,8 +103,8 @@ class Member:
             self._borrowed_books.remove(book)
     
     def __str__(self):
-        borrowed_books_str = "\n\n".join(str(book) for book in self._borrowed_books) or "Nessun libro in prestito"
-        return f"Nome del Membro: {self._nome}\nId del Membro: {self._member_id}\nLibri in prestito: {borrowed_books_str}\n{'-' * 50}"
+        _borrowed_books_str = "\n\n".join(str(book) for book in self._borrowed_books) or "Nessun libro in prestito"
+        return f"Nome del Membro: {self._nome}\nId del Membro: {self._member_id}\nLibri in prestito: {_borrowed_books_str}\n{'-' * 50}"
 
     @classmethod
     def from_string(cls, member_str: str):
@@ -113,42 +113,42 @@ class Member:
 
 class Libreria:
 
-    total_books = 0
+    _total_books = 0
 
     def __init__(self):
-        self.books = []
-        self.members = []
+        self._books = []
+        self._members = []
 
     def add_book(self, book:Book):
-        self.books.append(book)
-        Libreria.total_books += 1
+        self._books.append(book)
+        Libreria._total_books += 1
     
     def remove_book(self, book:Book):
         if book in self.books:
-            self.books.remove(book)
-            Libreria.total_books -= 1
+            self._books.remove(book)
+            Libreria._total_books -= 1
     
     def register_member(self, member:Member):
-        if member not in self.members:
-            self.members.append(member)
+        if member not in self._members:
+            self._members.append(member)
     
     def lend_book(self, book:Book, member:Member):
-        if book in self.books and member in self.members:
+        if book in self._books and member in self._members:
             member.borrow_book(book)
-            self.books.remove(book)
-            Libreria.total_books -= 1
+            self._books.remove(book)
+            Libreria._total_books -= 1
 
         else:
             print("Libro non disponibile o membro non registrato")
     
     def __str__(self):
-        book_str = "\n".join(str(book) for book in self.books) or "Nessun libro disponibile"
-        member_str = "\n".join(str(member) for member in self.members) or "Nessun membro registrato"
-        return f"Libri: {book_str}\nMembri: {member_str}"
+        _book_str = "\n\n".join(str(book) for book in self._books) or "Nessun libro disponibile"
+        _member_str = "\n\n".join(str(member) for member in self._members) or "Nessun membro registrato"
+        return f"Libri: {_book_str}\nMembri: {_member_str}"
     
     @classmethod
     def library_statistics(cls):
-        return  f"Numero totale di libri: {cls.total_books}"
+        return  f"Numero totale di libri: {cls._total_books}"
 
     
 if __name__ == "__main__":

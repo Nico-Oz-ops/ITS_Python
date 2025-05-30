@@ -8,8 +8,8 @@ class Book:
     def __str__(self):
         return f"\n- Title: {self._title}\n- Author: {self._author}\n- ISBN: {self._isbn}"
     
-    # def __repr__(self):
-    #     return f"Title={self._title}; Author={self._author}; ISBN={self._isbn}"
+    def __repr__(self):
+        return f"Title={self._title}; Author={self._author}; ISBN={self._isbn}"
     
     @classmethod
     def from_string(cls, str_repr: str):

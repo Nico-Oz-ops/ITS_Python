@@ -1,6 +1,6 @@
-# Ciao Lisa, la bucaiola, come stai?
+# Ciao buhaiola, come stai?
 ## Hola gente!!!
 ### Hello people
-#### Piccolina
-##### Ma quanto sei piccolina
-###### Sempre più piccolina
+#### Buhaiolìn
+##### Ma quanto sei piccolìn
+###### Sempre più ìn

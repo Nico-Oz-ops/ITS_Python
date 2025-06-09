@@ -182,7 +182,7 @@ if __name__ == "__main__":
     rented_c123 = vrs.get_rented_movies("C123")
     customer_c123 = vrs.customers["C123"]
 
-    print(f"= Elenco dei film noleggiati da {customer_c123.name} =")
+    print(f"Elenco dei film noleggiati da {customer_c123.name}:\n")
     for movie in rented_c123:
         print(f"- {movie.title} - {movie.director}")
     print("-" * 50)
@@ -190,7 +190,7 @@ if __name__ == "__main__":
     rented_c159 = vrs.get_rented_movies("C159")
     customer_c159 = vrs.customers["C159"]
 
-    print(f"= Elenco dei film noleggiati da {customer_c159.name} =")
+    print(f"Elenco dei film noleggiati da {customer_c159.name}:\n")
     for movie in rented_c159:
         print(f"- {movie.title} - {movie.director}")
     

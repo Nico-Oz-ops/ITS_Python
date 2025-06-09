@@ -1,4 +1,4 @@
-# Trovare il numero massimo e minimo di un elenco di numeri
+# Esercizio 01 - Trovare il numero massimo e minimo di un elenco di numeri
 
 def massimo_minimo():
     numeri = []

@@ -15,6 +15,7 @@ c) 30, 25, 20, 15, 10, 5, 0
 d) 5, 15, 25, 35, 45
 '''
 
+# 1 
 def combinazione_condizioni(x: bool, y: bool, z: bool) -> str:
     if x == True and (y or z) == True:
         return "Azione permessa"
@@ -25,6 +26,7 @@ def combinazione_condizioni(x: bool, y: bool, z: bool) -> str:
 print(combinazione_condizioni(True, False, True))
 print("-" * 50)
 
+# 2
 def treshold_multiplicazione(lista: list[int], treshold: int) -> int:
     prodotto = 1
 
@@ -36,7 +38,7 @@ def treshold_multiplicazione(lista: list[int], treshold: int) -> int:
 print(treshold_multiplicazione([2, 5, 88, 4, 7, 9], 50))
 print("-" * 50)
 
-
+# Opzionale A
 def fattoriale(numero: int) -> int:
     fattoriale = 1
 
@@ -49,6 +51,7 @@ def fattoriale(numero: int) -> int:
 print(fattoriale(5))
 print("-" * 50)
 
+# Opzionale B
 def fattoriale(numero: int) -> int:
     fattoriale = 1
 
@@ -61,7 +64,7 @@ def fattoriale(numero: int) -> int:
 print(fattoriale(5))
 print("-" * 50)
 
-
+# 3a
 print("Esercizio 3A")
 lista = []
 for i in range(2, 14 + 1, 2):
@@ -69,6 +72,7 @@ for i in range(2, 14 + 1, 2):
 print(*lista)
 print("-" * 50)
 
+# 3b
 print("Esercizio 3B")
 lista = []
 for i in range(1, 14, 3):
@@ -76,6 +80,7 @@ for i in range(1, 14, 3):
 print(*lista)
 print("-" * 50)
 
+# 3c
 print("Esercizio 3C")
 lista = []
 for i in range(30, -5, -5):
@@ -83,6 +88,7 @@ for i in range(30, -5, -5):
 print(*lista)
 print("-" * 50)
 
+# 3d - 1
 print("Esercizio 3D")
 lista = []
 for i in range(5, 45 + 1, 10):
@@ -90,11 +96,12 @@ for i in range(5, 45 + 1, 10):
 print(*lista)
 print("-" * 50)
 
-
+# 3d - 2
 print("Esercizio 3D")
 lista = [5, 15, 25, 35, 45]
 print(", ".join(str(x) for x in lista))
 
+# 3d - 3
 #list comprehension
 a = [i for i in range(5, 50, 10)]
 print(*a)

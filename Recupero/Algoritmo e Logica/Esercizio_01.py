@@ -39,7 +39,7 @@ decifrata.
 
 from string import ascii_lowercase, ascii_uppercase
 
-def caesar_cypher_encrypt(s, key):
+def caesar_cypher_encrypt(s: str, key: int) -> str:
 
     cifrare = []
 
@@ -57,7 +57,7 @@ def caesar_cypher_encrypt(s, key):
         else:
             cifrare.append(carattere)
     
-    return cifrare
+    return ''.join(cifrare)
 
 def caesar_cypher_decrypt(s, key):
 
@@ -77,7 +77,7 @@ def caesar_cypher_decrypt(s, key):
         else:
             decifrare.append(carattere)
     
-    return decifrare
+    return ''.join(decifrare)
 
 
 messaggio = "Ciao, come va? Hai capito qualcosa? O continui ad essere una capra di monte?"

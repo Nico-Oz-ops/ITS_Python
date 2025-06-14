@@ -36,7 +36,7 @@ def codifica_lettere(s, chiave):
             str_cifrata.append(ascii_lowercase[indice])
         
         elif car in ascii_uppercase:
-            indice = (ascii_uppercase.index(car) + chiave) % 26
+            indice = (ascii_uppercase.index(car) + chiave) % len(ascii_uppercase)
             str_cifrata.append(ascii_uppercase[indice])
         
         else:

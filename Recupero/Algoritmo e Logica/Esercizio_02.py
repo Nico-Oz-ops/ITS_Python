@@ -29,8 +29,32 @@ def ricerca_binaria(lista: list[int], numero_da_cercare: int) -> bool:
 list_1 = [1, 5, 9, 7, 6, 8, 3, 10] 
 print(ricerca_binaria(list_1, 7))
 print(ricerca_binaria(list_1, 11))
-   
 
+
+#  versione ricorsiva
+
+def binary_research(lista: list[int], numero: int) -> None:
+
+    mid: int = len(lista) // 2
+
+    if lista[mid] == numero:
+        print("Il numero è stato trovato!")
+    
+    elif len(lista) == 1:
+        print("Numero non trovato")
+    
+    elif lista[mid] < numero:
+        binary_research(lista[mid +1:], numero)
+    
+    elif lista[mid] > numero:
+        binary_research(lista[:mid], numero)
+    
+    return False
+
+   
+lista = [1, 12, 300, 5, 9, 7, 6, 8, 3, 10] 
+print(ricerca_binaria(list_1, 5))
+print(ricerca_binaria(list_1, 1))
 
 
 

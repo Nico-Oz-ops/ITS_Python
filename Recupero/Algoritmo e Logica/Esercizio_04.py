@@ -79,3 +79,34 @@ mat3 = [
 print("Matrice 3")
 print(f"Diagonale primaria: {sum_primary_diagonal(mat3)}")
 print(f"Diagonale primaria: {sum_secondary_diagonal(mat3)}")
+
+
+# opzione del prof
+
+def diag(m: list[list[int]]) -> int:
+    somma: int = 0
+    somma_2: int = 0
+
+    for i in range(len(m)):
+        somma += m[i][i]
+        somma_2 += m[i][len(m) - 1 - i]
+    
+    return somma, somma_2
+
+matx1 = [
+[1, 2, 3],
+[4, 5, 6],
+[7, 8, 9]
+]
+print("\nVersione prof - Matrice 1")
+print(f"Diagonale primaria: {sum_primary_diagonal(matx1)}")
+print(f"Diagonale secondaria: {sum_secondary_diagonal(matx1)}\n") 
+
+matx2 = [
+    [1, 2],
+    [4, 5],
+    [6, 7]
+]
+print("Versione prof - Matrice 2")
+print(f"Diagonale primaria: {sum_primary_diagonal(matx2)}")
+print(f"Diagonale primaria: {sum_secondary_diagonal(matx2)}\n")

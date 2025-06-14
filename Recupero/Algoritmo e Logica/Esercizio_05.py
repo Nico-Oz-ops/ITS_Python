@@ -47,5 +47,28 @@ print(is_valid_ipv4("256.100.10.1"))
 print(is_valid_ipv4("192.168.1"))
 print(is_valid_ipv4("192.168.1.a"))
 
+
+# versione del prof
+
+def check(ip: str) -> bool:
+
+    blocchi: list[str] = ip.split(".")
+
+    if len(blocchi) != 4:
+        return False
+    
+    for blocco in blocchi:
+
+        if not blocco.isdigit():
+            return False
+        
+        if not (0 <= int(blocco) <= 255):
+            return False
+        
+    return True
+
+
+
+
         
     

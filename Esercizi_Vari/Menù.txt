@@ -1,0 +1,56 @@
+Cosa vedremo durante il percorso:
+
+* Funzioni ricorsive:
+
+    - Capire la ricorsione, casi base e ricorsione indiretta
+
+    - Esempi classici (fattoriale, fibonacci, cammino, ecc.)
+
+* Programmazione orientata agli oggetti (OOP):
+
+    - Definizione di classi e oggetti
+
+    - Attributi e metodi
+
+    - Incapsulamento, ereditarietà e polimorfismo (in modo graduale)
+
+* Liste dentro dizionari / dizionari dentro liste:
+
+    - Strutture dati annidate
+
+    - Come navigare e manipolare dati complessi
+
+* Liste dentro liste (matrici):
+
+    - Matrici 2D e operazioni base su di esse
+
+    - Cicli annidati per elaborare matrici
+
+* Approfondimenti sulle collections:
+
+    - Metodi avanzati di liste, set e dizionari
+
+    - Comprensioni di liste e dizionari (list/dict comprehensions)
+
+    - Funzioni lambda e funzioni built-in correlate
+
+* Altri argomenti utili:
+
+    - Gestione degli errori e eccezioni
+
+    - Moduli standard utili (es. random, math, collections avanzato)
+
+    - Input/output su file, parsing dati
+
+
+Settimana 1: logica, condizioni, cicli, funzioni base
+
+Settimana 2: funzioni avanzate, ricorsione semplice
+
+Settimana 3: introduzione a OOP: classi e oggetti
+
+Settimana 4: approfondimento OOP (ereditarietà, polimorfismo)
+
+Settimana 5: collezioni annidate, matrici e liste dentro dizionari
+
+Settimana 6: comprensioni, lambda, gestione errori, moduli, file I/O

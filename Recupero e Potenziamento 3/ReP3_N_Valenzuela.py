@@ -1,7 +1,7 @@
 '''
 Definire le seguenti classi con attributi privati:
 
-Creatura con le seguenti proprietà:
+A. Creatura con le seguenti proprietà:
 - attributi: nome (di tipo stringa, per indicare il nome della creatura)
 - metodi: tutti i metodi standard, ovvero __init__, setter, getter e __str__
 In particolare:
@@ -9,7 +9,7 @@ il metodo setNome() deve fare un controllo se il nome inserito sia una stringa v
 In caso contrario, impostare il nome della creatura con il valore di "Creatura Generica".
 il metodo __str__ deve mostrare in output: "Creatura: nome creatura"
 
-Alieno (che eredita da Creatura) con le seguenti proprietà:
+B. Alieno (che eredita da Creatura) con le seguenti proprietà:
 - attributi: matricola (di tipo intero positivo), munizioni (una lista di 15 interi positivi)
 - metodi: setter, getter, __str__
 In particolare:
@@ -18,7 +18,7 @@ con un numero intero positivo casuale tra 10000 e 90000.
 Per generare un numero intero casuale nell'intervallo [a, b] (ovvero estremi inclusi), importare il modulo 
 random e usare la funzione randint(a,b) del modulo;
  
-il metodo setMunizioni() (privato) non riceve argomenti in input e deve inizializzare l'attributo munizioni 
+Il metodo setMunizioni() (privato) non riceve argomenti in input e deve inizializzare l'attributo munizioni 
 con una lista di 15 numeri interi positivi i cui elementi sono numeri della sequenza 0, 1, 4, 9, 16, 25, 36, 49, ... 
 Usare le list comprehension.
 il metodo __init__ deve inizializzare la superclasse, inizializzare la matricola e le munizioni.
@@ -30,7 +30,7 @@ modo corretto: "Attenzione! Tutti gli Alieni devono avere il nome "Robot" seguit
 Reimpostazione nome Alieno in Corso!".
 il metodo __str__ deve mostrare in output: "Alieno: nome alieno" (ad esempio: Alieno: Robot-16326)
 
-Mostro (che eredita da Creatura) con le seguenti proprietà:
+C. Mostro (che eredita da Creatura) con le seguenti proprietà:
 - attributi: urlo_vittoria (di tipo stringa), gemito_sconfitta (di tipo stringa), assalto (una lista di 15 interi 
 positivi)
 - metodi: setter, getter, __str__
@@ -45,17 +45,16 @@ vittoria e sconfitta siano valori validi. In caso contrario, devono impostare gl
 ad esempio, se il nome del mostro è "Godzilla", il metodo __str__ dovrà mostrare a schermo: Mostro: gOdZiLlA, 
 ovvero il nome del mostro scritto con i caratteri alternati minuscolo-maiuscolo.
 
+---------------------------------------------------------------------------------------------------------------------------
 
-
-
-All'interno del file ReP3_inizialeNome_Cognome (fuori dalla classi) definire le seguenti funzioni:
-pariUguali(a: list[int], b: list[int]). Questo metodo riceve in input due liste a e b di interi positivi e 
+1. All'interno del file ReP3_inizialeNome_Cognome (fuori dalla classi) definire le seguenti funzioni: pariUguali(a: list[int], b: list[int]). 
+Questo metodo riceve in input due liste a e b di interi positivi e 
 deve restituire una lista c.
 Ogni elementi della lista c deve essere uguale a:
 - 1 se l'elemento i-esimo di a e l'elemento i-esimo di b sono sono entrambi pari
 - 0 altrimenti
 
-combattimento(a: Alieno, m: Mostro). Questo metodo riceve in input un oggetto della classe Alieno ed un oggetto 
+2. combattimento(a: Alieno, m: Mostro). Questo metodo riceve in input un oggetto della classe Alieno ed un oggetto 
 della classe Mostro. Il metodo deve controllare la validità di a e la validità di m. Se a non è un Alieno o se m 
 non è un Mostro, il combattimento deve essere interrotto, mostrare un opportuno messaggio e ritornare None. 
 Altrimenti, se a e m sono oggetti validi, il metodo deve simulare il combattimento tra Mostro e Alieno, 
@@ -64,7 +63,7 @@ munizioni dell'Alieno e all'assalto del Mostro. Se la lista prodotta in output d
 con valore 1, allora il vincitore è il mostro. Altrimenti, il vincitore è l'alieno. Se vince il mostro, sullo schermo 
 viene stampato per 3 volte l'urlo della vittoria, altrimenti viene stampato il gemito della sconfitta.
 
-proclamaVincitore(c: Creatura). Questo metodo stampa a schermo se hanno vinto gli alieni o i mostri 
+3. proclamaVincitore(c: Creatura). Questo metodo stampa a schermo se hanno vinto gli alieni o i mostri 
 (a seconda dell'oggetto c) e , mostra il vincitore all'interno di un rettangolo con contorno di * come nell'esempio.
 
 *****************************

@@ -37,9 +37,10 @@ def somma_cubi_dispari(numeri: list[int]) -> int:
     num_dispari = filter(lambda numero: numero % 2 == 1, numeri) # con filter() seleziono solo i dispari
     num_dispari_cubi = map(lambda numero: numero ** 3, num_dispari) # con map() elevo al cubo ciascun numero filtrato (num_dispari)
 
-    return reduce(lambda a, b: a + b, num_dispari_cubi, 0) # con reduce() sommo i cubi passando due argomenti (una funzione e un iterabile)
-                                                         # aggiungo 0 perché se l'iterabile num_dispari_cubi fosse vuoto, senza valore iniziale 
-                                                         # allora mi restituirebbe TypeError
+    return reduce(lambda a, b: a + b, num_dispari_cubi, 0) 
+# con reduce() sommo i cubi passando due argomenti (una funzione e un iterabile)
+# aggiungo 0 perché se l'iterabile num_dispari_cubi fosse vuoto, senza valore iniziale 
+# allora mi restituirebbe TypeError
 
 numeri = [1, 2, 3, 4, 5]
 print(somma_cubi_dispari(numeri))

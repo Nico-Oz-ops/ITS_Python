@@ -54,3 +54,41 @@ Settimana 4: approfondimento OOP (ereditarietà, polimorfismo)
 Settimana 5: collezioni annidate, matrici e liste dentro dizionari
 
 Settimana 6: comprensioni, lambda, gestione errori, moduli, file I/O
+
+
+
+
+Tema: OOP - Scaletta progressiva per consolidare bene i concetti:
+
+1. Classi e oggetti
+
+    * Creare una classe semplice con attributi e metodi.
+
+    * Istanze multiple della stessa classe.
+
+2. Metodi speciali (__init__, __str__, ecc.)
+
+    * Inizializzazione automatica.
+
+    * Rappresentazione leggibile degli oggetti.
+
+3. Incapsulamento
+
+    * Attributi pubblici, protetti e privati.
+
+    * Getter e setter.
+
+4. Ereditarietà
+
+    * Classe base e sottoclassi.
+
+    * Sovrascrivere metodi.
+
+5. Polimorfismo
+
+    * Stesso metodo con comportamenti diversi su classi diverse.
+
+6. Mini-progetto
+
+    * Integrare classi, ereditarietà e polimorfismo in un piccolo sistema 
+    (per esempio: gestione di studenti e corsi, o libreria con libri e utenti).

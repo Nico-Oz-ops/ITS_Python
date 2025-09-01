@@ -54,7 +54,7 @@ def binary_research(lista: list[int], numero: int) -> None:
    
 lista = [1, 12, 300, 5, 9, 7, 6, 8, 3, 10] 
 print(ricerca_binaria(list_1, 5))
-print(ricerca_binaria(list_1, 1))
+print(ricerca_binaria(list_1, 11))
 
 
 

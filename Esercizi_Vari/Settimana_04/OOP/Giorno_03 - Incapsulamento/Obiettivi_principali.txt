@@ -1,0 +1,15 @@
+**Obiettivi principali**
+
+1. Attributi pubblici, protetti e privati
+
+    * Pubblici: accessibili da ovunque (self.nome)
+
+    * Protetti: convenzione con _ (es. self._nome), da usare con cautela fuori dalla classe
+
+    * Privati: doppio underscore __ (es. self.__nome), accessibili solo dentro la classe
+
+2. Getter e setter
+
+    * Permettono di leggere e modificare attributi protetti o privati senza accedere direttamente.
+
+    * Possono contenere logica di validazione.

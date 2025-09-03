@@ -1,0 +1,11 @@
+**Obiettivi Principali**
+
+Errori ed eccezioni (try/except).
+
+1. Imparare a intercettare e gestire errori con try/except.
+
+2. Utilizzare blocchi multipli (except per tipi specifici, else, finally).
+
+3. Creare e lanciare eccezioni personalizzate (raise).
+
+4. Migliorare la robustezza del codice evitando crash imprevisti.

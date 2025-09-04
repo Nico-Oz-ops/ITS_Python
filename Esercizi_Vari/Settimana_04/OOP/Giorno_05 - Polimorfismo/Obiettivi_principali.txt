@@ -1,0 +1,19 @@
+Obiettivi Giorno 5
+
+    1. Comprendere polimorfismo: diversi oggetti rispondono allo stesso metodo in modi diversi.
+
+    2. Scrivere funzioni o cicli che possono lavorare con oggetti di classi diverse senza controlli 
+       di tipo espliciti (isinstance).
+
+    3. Consolidare l’uso di override dei metodi e liste di oggetti misti.
+
+**Struttura degli esercizi di oggi**
+
+Tema: Polimorfismo
+Obiettivo: Usare lo stesso metodo su classi diverse e ottenere comportamenti specifici.
+Metodo di studio:
+
+    * Creare una superclasse generica
+    * Definire sottoclassi che ridefiniscono uno o più metodi
+    * Creare una lista mista di oggetti
+    * Usare un loop o una funzione unica per richiamare il metodo polimorfico

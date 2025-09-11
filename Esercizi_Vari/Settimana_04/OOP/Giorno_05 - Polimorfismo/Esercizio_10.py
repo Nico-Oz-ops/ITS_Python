@@ -92,3 +92,4 @@ notifiche = [Email(), SMS(), Push()]
 messaggio = "Attenzione: il sistema sarà in manutenzione dalle 00:00 fino alle 05:00."
 
 invia_notifiche(notifiche, messaggio)
+

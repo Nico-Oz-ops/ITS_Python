@@ -13,8 +13,8 @@ Traccia:
 '''
 class Rettangolo:
     def __init__(self, larghezza: float, altezza: float):
-        self.larghezza = larghezza # usa il setter
-        self.altezza = altezza # usa il setter
+        self._larghezza = larghezza # usa il setter
+        self._altezza = altezza # usa il setter
     
     @property
     def larghezza(self):

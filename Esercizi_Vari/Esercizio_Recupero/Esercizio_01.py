@@ -1,3 +1,5 @@
+# Esercizio 1
+
 class TaskManager:
     def __init__(self):
         self.tasks = {}
@@ -9,7 +11,6 @@ class TaskManager:
 
         return {task_id: self.tasks[task_id]}
     
-
     def complete_task(self, task_id: str) -> dict|str:
         if task_id not in self.tasks:
             return "Errore: task non trovato"
@@ -32,17 +33,12 @@ class TaskManager:
         return {task_id: task_rimosso}
     
     def list_task(self) -> list[str]:
-        return [task_id for task_id in self.tasks.keys()] # --> forma più compatta: return list(self.tasks.key()) o list(self.tasks)
+        return [task_id for task_id in self.tasks.keys()] # --> forma più compatta: return list(self.tasks.keys()) o list(self.tasks)
     
     def get_task(self, task_id: str) -> dict|str:
         if task_id not in self.tasks:
             return "Errore: task non trovato"
         return {task_id: self.tasks[task_id]}
-
-
-    
-    
-
 
 
 # tasks = {

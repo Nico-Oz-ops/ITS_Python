@@ -36,3 +36,50 @@ Restituisce una lista di ISBN di tutti i libri in catalogo.
 Restituisce i dettagli del libro dato il suo ISBN.
 Se il libro non esiste, restituisce "Libro non trovato".
 '''
+
+class LibraryManager:
+    def __init__(self):
+        self.libri = {}
+    
+
+    def add_book(self, isbn: str, titolo: str, autore: str) -> dict|str:
+        if isbn in self.libri:
+            raise ValueError("Errore: il libro è già presente nel catalogo")
+        self.libri[isbn] = {"titolo": titolo, "autore": autore, "disponibile": True}
+        return {isbn: self.libri[isbn]}
+    
+    def borrow_book(self, isbn: str) -> dict|str:
+        if isbn not in self.libri:
+            raise ValueError("Errore: il libro non esiste in questo catalogo")
+        
+        if self.libri[isbn]["disponibile"] == False:
+            return "Libro non disponibile"
+        else:
+            self.libri[isbn]["disponibile"] = False
+            return {isbn: self.libri[isbn]}
+
+    def return_book(self, isbn: str):
+        if isbn not in self.libri:
+            raise ValueError("Errore: il libro non esiste")
+        self.libri[isbn]["disponibile"] = True
+        return {isbn: self.libri[isbn]}
+    
+    def remove_book(self, isbn: str):
+        if isbn not in self.libri:
+            raise ValueError("Errore: il libro non esiste")
+        libro_rimosso = self.libri.pop(isbn)
+        return {isbn: libro_rimosso}
+    
+    def list_books(self) -> list[str]:
+        return list(self.libri.keys()) # oppure return [libro for libro in self.libri.keys()]
+    
+    def get_book(self, isbn: str):
+        if isbn not in self.libri:
+            return "Libro non trovato"
+        return {isbn: self.libri[isbn]}
+    
+
+
+        
+
+        

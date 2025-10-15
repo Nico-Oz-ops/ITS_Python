@@ -13,3 +13,7 @@ def filter_and_square(nums: list[int], soglia: int) -> list[int]:
         if num > soglia and num % 2 == 0:
             lista_nuova.append(num)
     return lista_nuova
+
+
+
+

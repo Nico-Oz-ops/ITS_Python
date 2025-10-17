@@ -23,15 +23,14 @@ matrice = [
 '''
 # Alternativa 1
 def trasposta(matrice: list[list[int]]) -> list[list[int]]:
-    num_righe = len(matrice)
     num_colonne = len(matrice[0])
     risultato = []
 
     for colonna in range(num_colonne):
         nuova_riga = []
 
-        for riga in range(num_righe):
-            nuova_riga.append(matrice[riga][colonna])
+        for riga in matrice:
+            nuova_riga.append(riga[colonna])
         
         risultato.append(nuova_riga)
     

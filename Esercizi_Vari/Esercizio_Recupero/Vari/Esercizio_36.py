@@ -45,3 +45,19 @@ matrice = [
     [7, 8, 9]
 ]
 print(somma_elementi_matrice(matrice))
+
+
+# Alternativa Lisa
+def somma_elementi_matrice(matrice: list[list[int]]) -> int:
+    somma = 0
+    for sottolista in matrice:
+        for num in sottolista:
+            somma += num 
+    return somma
+
+matrice = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+print(somma_elementi_matrice(matrice))

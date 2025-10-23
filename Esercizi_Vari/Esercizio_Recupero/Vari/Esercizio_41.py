@@ -24,7 +24,7 @@ matrice = [
 # Alternativa 1 - senza uso di built-in o comprehension
 def trasposta(matrice: list[list[int]]) -> list[list[int]]:
     num_colonne = len(matrice[0])
-    nuova_lista = []
+    nuova_matrice = []
 
     for colonna in range(num_colonne):
         nuova_riga = []
@@ -32,9 +32,9 @@ def trasposta(matrice: list[list[int]]) -> list[list[int]]:
         for riga in matrice:
             nuova_riga.append(riga[colonna])
         
-        nuova_lista.append(nuova_riga)
+        nuova_matrice.append(nuova_riga)
     
-    return nuova_lista
+    return nuova_matrice
 
 matrice = [
     [1, 2, 3],

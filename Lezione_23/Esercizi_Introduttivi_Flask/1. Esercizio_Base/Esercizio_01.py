@@ -10,9 +10,14 @@ app = Flask(__name__)
 
 @app.route("/")
 def home() -> str:
-    return ""
+    return "Benvenuto nella mia app Flask"
 
 @app.route("/about")
 def about() -> str:
-    return "<h1>Lalala</h1>"
-
+    return '''
+    <h1>About</h1>
+    <p>Questa è una semplice applicazione Flask creata per esercitarmi con le route.</p>
+    <p>Autore: Nico</p>
+    '''
+if __name__=="__main__":
+    app.run(debug=True)

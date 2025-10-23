@@ -33,7 +33,7 @@ indice_colonna = 1
 print(massimo_colonna(matrice, indice_colonna))
 
 
-# Alternativa 2
+# Alternativa 2 - max - comprehension
 def massimo_colonna(matrice: list[list[int]], indice_colonna: int) -> int:
     return max([riga[indice_colonna] for riga in matrice])
 

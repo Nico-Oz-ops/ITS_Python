@@ -2,16 +2,16 @@ from flask import Flask, url_for
 
 app = Flask(__name__)
 
-@app.route('/') # rotta statica che corrisponde a un URL fisso
+# 1. rotta statica che corrisponde a un URL fisso
 # si possono creare tutte le rotte statiche che voglio,
 # ognuna con il suo contenuto o comportamento
+@app.route('/') 
 def home() -> str:
     return "<h1>Hola Hola!!!</h1>"
 
-@app.route('/user/<string:username>')
-# rotte dinamiche: si possono creare rotte che accettano variabili
+# 2. rotte dinamiche: si possono creare rotte che accettano variabili
 # nell'URL usando una sintassi speciale con angoli < >.
-
+@app.route('/user/<string:username>')
 def show_user_profile(username: str) -> str:
     return f"Profilo di {username}"
 
@@ -19,6 +19,7 @@ def show_user_profile(username: str) -> str:
 def show_post(post_id: int) -> str:
     return f"Post {post_id}"
 
+# 3. Url_for()
 with app.test_request_context():
     print(url_for('home')) # stampa: /
     print(url_for('show_user_profile', username = 'John Doe')) # stampa: /user/John%20Doe

@@ -103,8 +103,9 @@ class Visitor:
     
     def reserve_ticket(self, ticket: SlideTicket) -> None:
         if ticket not in self.reserved_tickets:
-            self.reserved_tickets.append(ticket)
             ticket.reserve()
+            self.reserved_tickets.append(ticket)
+            
         else:
             print(f"Il biglietto per lo scivolo '{ticket.slide_name}' non è disponibile")
     
@@ -140,7 +141,7 @@ class WaterPark:
             visitor = self.visitors[visitor_id]
             ticket = self.tickets[ticket_id]
 
-            return visitor.reserve_ticket(ticket)
+            visitor.reserve_ticket(ticket)
 
     def cancel_ticket(self, visitor_id: str, ticket_id: str) -> None:
         if visitor_id not in self.visitors or ticket_id not in self.tickets:
@@ -150,7 +151,7 @@ class WaterPark:
             visitor = self.visitors[visitor_id]
             ticket = self.tickets[ticket_id]
 
-            return visitor.cancel_ticket(ticket)
+            visitor.cancel_ticket(ticket)
 
     def list_available_tickets(self) -> list[str]:
         return [t_id for t_id, ticket in self.tickets.items() if not ticket.is_reserved]

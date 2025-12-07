@@ -16,24 +16,24 @@ def home():
 
 @app.route("/show_urls")
 def show_urls():
-    about_url = url_for('about')
-    user_url = url_for('show_user_profile', username='John Doe')
-    square_url = url_for('show_post', post_id=42)
+    home_url = url_for('home')
+    user_url = url_for('show_user_profile', username='John Boh')
+    post_url = url_for('show_post', post_id=42)
 
     # restituire una pagina con i link
     return f"""
     <h2>Link generati con url_for:</h2>
     <ul>
         <li><a href="{home_url}">Home</a></li>
-        <li><a href="{user_url}">Profilo utente (John Doe)</a></li>
+        <li><a href="{user_url}">Profilo utente (John Boh)</a></li>
         <li><a href="{post_url}">Post 42</a></li>
     </ul>"""
 
 @app.route('/user/<string:username>')
-def square_num(username):
+def show_user_profile(username):
     return f"Profilo di {username}"
 
-@app.route('/square/<int:n>')
+@app.route('/post/<int:post_id>')
 def show_post(post_id):
     return f"Post {post_id}"
 
